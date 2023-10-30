@@ -15,7 +15,41 @@ body{
 form{
     text-align: center;
     background-color: hsl(213, 19%, 18%);
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
 
+}
+.star{
+    margin-right:320px;
+    margin-top: 40px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: aqua;
+    
+}
+
+h1{
+    color: whitesmoke;
+    text-align: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-family: 'Overpass', sans-serif;
+    
+}
+p{
+    color: hsl(217, 12%, 63%) ;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 350px;
+    margin-left: 20px;
+    font-family: 'Overpass', sans-serif;
+    line-height: 1.5;
+    word-spacing: 1px;
+    
+    
 }
 ol{
     display: flex;
@@ -26,19 +60,38 @@ ol{
 li{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    margin: 5px;
-    border-radius: 10px;
+    justify-content: space-around;
+    font-family: 'Overpass', sans-serif;
+    
 }
 
 .number_btn{
+    
     font-style: none;
+    border-radius: 40%;
+    text-decoration: none;
+    background-color: #2f3a42;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    color: hsl(217, 12%, 63%);
+    margin-top: 60px;
+    opacity: 200;
 }
 
 .submitButton{
     justify-content: center;
     align-items: center;
+    background-color: orange;
+    color: white;
+    border: none;
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    margin-top: 20px;
 }
 
 #thankYouForm{

@@ -5,20 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Overpass&family=Poppins&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
   
 </head>
 <body>
   <div>
     <form id="ratingForm">
-      <img src="/images/icon-star.svg" alt="star on top">
+      <img src="/images/icon-star.svg" alt="star on top" class="star">
       <h1>How did we do?</h1>
       <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offerings.</p>
       <ol>
-        <li><button type="button" id="rating1" class="number_btn">1</button></li>
-        <li><button type="button" id="rating2" class="number_btn">2</button></li>
-        <li><button type="button" id="rating3" class="number_btn">3</button></li>
-        <li><button type="button"id="rating4" class="number_btn">4</button></li>
-        <li><button type="button" id="rating5" class="number_btn">5</button></li>
+        <li><button type="button" id="rating1" data-value="1" class="number_btn">1</button></li>
+        <li><button type="button" id="rating2" data-value="2" class="number_btn">2</button></li>
+        <li><button type="button" id="rating3" data-value="3" class="number_btn">3</button></li>
+        <li><button type="button"id="rating4" data-value="4" class="number_btn">4</button></li>
+        <li><button type="button" id="rating5" data-value="5" class="number_btn">5</button></li>
       </ol>
       <li><button type="submit" class="submitButton" id="submitButton">Submit</button></li>
     </form>
@@ -26,12 +29,12 @@
 
   <div>
     <form id="thankYouForm">
-      <p>You selected</p>
+      <p id="selectedRating">You selected</p>
       <h1>Thank you!</h1>
       <p>We appreciate you taking the time to give a rating. if you ever need more support. Dont hesitate to get in touch</p>
     </form>
   </div>
-<script src="/script.js">
-</script>
+<script src="/script.js"></script>
+
 </body>
 </html>
