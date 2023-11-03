@@ -8,20 +8,41 @@ let selectedRating = null; // Variable to store the selected rating
 
 ratingButtons.forEach(function (button) {
   button.addEventListener("click", function () {
-    selectedRating = button.getAttribute("data-value"); // Store the selected rating
-    selectedRatingElement.textContent = `You selected: ${selectedRating}`; // Display the selected rating
+    // Remove the previously selected button's class (if any)
+    if (selectedRating !== null) {
+      document.getElementById(`rating${selectedRating}`).classList.remove("selected");
+    }
+
+    selectedRating = button.getAttribute("data-value");
+    selectedRatingElement.textContent = `You selected: ${selectedRating}`;
+    
+    // Add the "selected" class to the clicked button
+    button.classList.add("selected");
   });
 });
 
+
+
+
+
+
+/*
+ratingButtons.forEach(function (button) {
+  button.addEventListener("click", function () {
+    selectedRating = button.getAttribute("data-value"); // Store the selected rating
+    selectedRatingElement.textContent = `You selected: ${selectedRating}`; // Display the selected rating
+});
+});
+*/
 submitButton.addEventListener("click", function (event) {
-  event.preventDefault();
-  if (selectedRating !== null) {
+event.preventDefault();
+if (selectedRating !== null) {
     // Handle form submission here (e.g., show the thank you form)
     ratingForm.style.display = "none";
     thankYouForm.style.display = "block";
-  } else {
+} else {
     alert("Please select a rating before submitting.");
-  }
+}
 });
 /*
 Code Structure:

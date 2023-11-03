@@ -82,6 +82,16 @@ li{
     opacity: 200;
 }
 
+.number_btn:hover {
+    background-color: orange;
+    color: white;
+}
+
+.number_btn.selected{
+    background-color: white;
+    color: orange;
+}
+
 .submitButton{
     justify-content: center;
     align-items: center;
@@ -93,7 +103,10 @@ li{
     border-radius: 25px;
     margin-top: 20px;
 }
-
+.submitButton:hover{
+    background-color: white;
+    color: orange;
+}
 #thankYouForm{
     display: none;
 }
